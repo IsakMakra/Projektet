@@ -54,6 +54,8 @@ nav > div:hover {
 }
 
 .best {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     background-color: rgba(255, 69, 0, 0.5);
     box-sizing: border-box;
     padding: 1vw 1vw;
@@ -62,21 +64,12 @@ nav > div:hover {
     margin-bottom: 50px;
 }
 
-ul {
-    
-}
-
-#load {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-#load .album_data {
+.album_data {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
 }
 
-#load .cover {
+.cover {
     grid-column: 4 / span 2;
     grid-row: 1 / span 2;
     box-sizing: border-box;
@@ -85,12 +78,12 @@ ul {
     border-radius: 50px 50px 0 0;
 }
 
-#load .show_not_hover {
+.show_not_hover {
     width: 100%;
     object-fit: cover;
 }
 
-#load .song_list {
+.song_list {
     grid-column: 4 / span 2;
     grid-row: 3;
     display: flex;
@@ -98,7 +91,7 @@ ul {
     gap: 1vw;
 }
 
-#load .song_list > div {
+.song_list > div {
     background-color: black;
     color: red;
     text-shadow: 5px 5px 5px darkred;
@@ -107,20 +100,34 @@ ul {
 }
 
 .song_list > div > ul {list-style: decimal;}
-#load .song_list > div > h2 {margin-left: 1.5vw;}
-#load .song_list > div:nth-child(1) {border-radius: 0 0 0 50px;}
-#load .song_list > div:nth-child(2) {border-radius: 0 0 50px 0;}
+.song_list > div > h2 {margin-left: 1.5vw;}
+.song_list > div:nth-child(1) {border-radius: 0 0 0 50px;}
+.song_list > div:nth-child(2) {border-radius: 0 0 50px 0;}
 
-#load .anecdotes {
+.anecdotes {
+    grid-column: 1 / span 5;
+    display: flex;
     list-style: none;
     color: red;
     text-shadow: 5px 5px 5px darkred;
 }
 
 #load .top_right_90 {
-    grid-column: 1;
-    background-color: black;
-    width: 100%;
-    padding: 5vw 1vw;
-    border-radius: 50px 0 50px 0;
+
+}
+
+#load .empty {
+
+}
+
+#load .two_wide {
+
+}
+
+#load .image {
+    background-image: url(images/Desktop/metallica1.jpg);
+}
+
+#load .bottom_right_90 {
+
 }
