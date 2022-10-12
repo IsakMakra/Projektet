@@ -29,13 +29,13 @@ nav {
 
 nav > div {
     display: flex;
-    width: 19vw;
+    width: 20vw;
     justify-content: center;
     background-color: rgba(255, 69, 0, 0.5);
-    padding: 10px 0;
+    padding: 1vw 0;
     border: solid 3px black;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     box-sizing: border-box;
 }
@@ -45,6 +45,7 @@ nav > .unmarked:hover {
     color: rgba(255, 69, 0, 0.5);
     border: solid 3px orange;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .marked {
@@ -56,12 +57,12 @@ nav > .unmarked:hover {
 .best {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 250px) 300px;
+    grid-template-rows: repeat(3, 16vw) 20vw;
     background-color: rgba(255, 69, 0, 0.5);
     padding: 1vw 1vw;
     border: solid 3px black;    
     border-radius: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 2vw;
     box-sizing: border-box;
 }
 
@@ -73,16 +74,19 @@ nav > .unmarked:hover {
 .cover {
     grid-column: 4 / span 2;
     grid-row: 1 / span 2;
-    padding: 20px;
     background-color: black;
-    height: 100%;
     border-radius: 50px 50px 0 0;
+    padding: 2vw;
     box-sizing: border-box;
 }
 
 .show_not_hover {
     width: 100%;
     object-fit: cover;
+}
+
+.show_hover {
+    display: none;
 }
 
 .song_list {
@@ -98,7 +102,7 @@ nav > .unmarked:hover {
     color: red;
     text-shadow: 5px 5px 5px darkred;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 1vw;
 }
 
 .song_list > div > ul {list-style: decimal;}
@@ -149,7 +153,7 @@ nav > .unmarked:hover {
     background-size: cover;
     width: 16.5%;
     border-radius: 0 20px 20px 20px;
-    font-size: 20px;
+    font-size: 2vw;
     color: orange;
     text-shadow: 5px 5px 5px darkred;
     padding-bottom: 2vw;
