@@ -9,9 +9,9 @@ body {
     width: 85vw;
     margin: 20vh auto;
     background-color: rgba(169, 0, 0, 0.5);
-    box-sizing: border-box;
     padding: 50px 3vw;
     border-radius: 30px;
+    box-sizing: border-box;
 }
 
 header > h1{
@@ -32,15 +32,15 @@ nav > div {
     width: 19vw;
     justify-content: center;
     background-color: rgba(255, 69, 0, 0.5);
-    box-sizing: border-box;
     padding: 10px 0;
     border: solid 3px black;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
-nav > div:hover {
+nav > .unmarked:hover {
     background-color: black;
     color: rgba(255, 69, 0, 0.5);
     border: solid 3px orange;
@@ -56,12 +56,13 @@ nav > div:hover {
 .best {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr) 1.2fr;
     background-color: rgba(255, 69, 0, 0.5);
-    box-sizing: border-box;
     padding: 1vw 1vw;
     border: solid 3px black;    
     border-radius: 30px;
     margin-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .album_data {
@@ -72,10 +73,10 @@ nav > div:hover {
 .cover {
     grid-column: 4 / span 2;
     grid-row: 1 / span 2;
-    box-sizing: border-box;
     padding: 20px;
     background-color: black;
     border-radius: 50px 50px 0 0;
+    box-sizing: border-box;
 }
 
 .show_not_hover {
@@ -105,29 +106,63 @@ nav > div:hover {
 .song_list > div:nth-child(2) {border-radius: 0 0 50px 0;}
 
 .anecdotes {
+    padding-left: 0;
+    gap: 1%;
     grid-column: 1 / span 5;
+    grid-row: 4;
     display: flex;
     list-style: none;
     color: red;
     text-shadow: 5px 5px 5px darkred;
+    margin-bottom: 0;
 }
 
 #load .top_right_90 {
-
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px 0 20px 20px;
+    padding: 1vw;
+    width: 16.5%;
+    box-sizing: border-box;
 }
 
 #load .empty {
-
+    width: 16.5%;
 }
 
 #load .two_wide {
-
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 20px 20px 20px 0;
+    width: 33%;
+    box-sizing: border-box;
 }
 
 #load .image {
+    display: flex;
+    align-items: flex-end;
     background-image: url(images/Desktop/metallica1.jpg);
+    background-size: cover;
+    width: 16.5%;
+    border-radius: 0 20px 20px 20px;
+    font-size: 32px;
+    color: orange;
+    text-shadow: 5px 5px 5px black;
+    padding-bottom: 2vw;
 }
 
 #load .bottom_right_90 {
-
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 1vw;
+    width: 16.5%;
+    border-radius: 20px 20px 0 20px;
+    box-sizing: border-box;
 }
+
+.tablet_empty {display: none;}
+.phone_empty {display: none;}
