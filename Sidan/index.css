@@ -8,33 +8,55 @@ body {
 .background {
     width: 85vw;
     margin: 20vh auto;
-    background-color: rgba(169, 0, 0, 0.8);
+    background-color: rgba(169, 0, 0, 0.5);
     box-sizing: border-box;
-    padding: 10px 3vw;
+    padding: 50px 3vw;
     border-radius: 30px;
 }
 
-header {
-    font-size: 4vw;
-    text-shadow: 10px 10px 3px red;
+header > h1{
+    font-size: 8vw;
+    text-shadow: 5px 5px 3px orange;
     color: black;
+    margin: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 nav > div {
     display: flex;
-    flex-grow: 1;
+    width: 19vw;
     justify-content: center;
-    background-color: rgba(255, 69, 0, 0.6);
+    background-color: rgba(255, 69, 0, 0.5);
     box-sizing: border-box;
     padding: 10px 0;
-    margin: 2px;
     border: solid 3px black;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
+}
+
+nav > div:hover {
+    background-color: black;
+    color: rgba(255, 69, 0, 0.5);
+    border: solid 3px orange;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: black;
+    color: rgba(255, 69, 0, 0.5);
+    border: solid 3px orange;
+}
+
+#load {
+    background-color: rgba(255, 69, 0, 0.5);
+    box-sizing: border-box;
+    padding: 50px 3vw;
+    border: solid 3px black;    
+    border-radius: 30px;
 }
