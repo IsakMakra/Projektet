@@ -53,10 +53,74 @@ nav > div:hover {
     border: solid 3px orange;
 }
 
-#load {
+.best {
     background-color: rgba(255, 69, 0, 0.5);
     box-sizing: border-box;
-    padding: 50px 3vw;
+    padding: 1vw 1vw;
     border: solid 3px black;    
     border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+ul {
+    
+}
+
+#load {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#load .album_data {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+#load .cover {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+}
+
+#load .show_not_hover {
+    width: 100%;
+    object-fit: cover;
+}
+
+#load .song_list {
+    grid-column: 4 / span 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+#load .song_list > div {
+    background-color: black;
+    color: red;
+    text-shadow: 5px 5px 5px darkred;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.song_list > div > ul {list-style: decimal;}
+#load .song_list > div > h2 {margin-left: 1.5vw;}
+#load .song_list > div:nth-child(1) {border-radius: 0 0 0 50px;}
+#load .song_list > div:nth-child(2) {border-radius: 0 0 50px 0;}
+
+#load .anecdotes {
+    list-style: none;
+    color: red;
+    text-shadow: 5px 5px 5px darkred;
+}
+
+#load .top_right_90 {
+    grid-column: 1;
+    background-color: black;
+    width: 100%;
+    padding: 5vw 1vw;
+    border-radius: 50px 0 50px 0;
 }
