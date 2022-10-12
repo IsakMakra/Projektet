@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-image: url(images/Desktop/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background {
+    width: 85vw;
+    margin: 20vh auto;
+    background-color: rgba(169, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 10px 3vw;
+    border-radius: 30px;
+}
+
+header {
+    font-size: 4vw;
+    text-shadow: 10px 10px 3px red;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: rgba(255, 69, 0, 0.6);
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 2px;
+    border: solid 3px black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
