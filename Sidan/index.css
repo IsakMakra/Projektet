@@ -207,25 +207,46 @@ p, ul{
     box-sizing: border-box;
 }
 
-#reload .bottom_left_90 {
-
+.bottom_left_90 {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px 20px 20px 0px;
+    width: 33%;
+    padding: 1vw;
+    box-sizing: border-box;
 }
 
-#reload .top_left_90 {
-
-
+.top_left_90 {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px 0 20px 20px;
+    width: 16.5%;
+    padding: 1vw;
+    box-sizing: border-box;
 }
 
-#reload .top_left_90_2 {
+.top_left_90_2 {
+    display: flex;
+    align-items: flex-end;
     background-image: url(images/Desktop/metallica2.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 0 20px 20px 20px;
     width: 33%;
+    padding: 2vw;
+    box-sizing: border-box;
 }
 
-#reload .bottom_right_90 {
-
-
+.bottom_right_90 {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px 20px 0 20px;
+    width: 16.5%;
+    padding: 1vw;
+    box-sizing: border-box;
 }
 
 .tablet_empty {display: none;}
