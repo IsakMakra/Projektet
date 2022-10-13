@@ -100,23 +100,22 @@ p, ul, footer{
 .cover {
     grid-column: 4 / span 2;
     grid-row: 1 / span 2;
-    background-color: black;
-    border-radius: 50px 50px 0 0;
-    padding: 2vw;
     box-sizing: border-box;
 }
 
 .show_not_hover {
+    border-radius: 50px 50px 0 0;
     width: 100%;
     object-fit: cover;
     position: relative;
-    bottom: 28.5vw;
+    bottom: 32.5vw;
     opacity: 1;
     transition-property: opacity;
     transition-duration: 1s;
 }
 
 .show_hover {
+    border-radius: 50px 50px 0 0;
     width: 100%;
     object-fit: cover;
 }
