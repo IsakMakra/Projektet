@@ -86,11 +86,14 @@ nav > .unmarked:hover {
 
 h2 {
     font-family: 'Barlow Semi Condensed';
+    font-size: 1.2vw;
 }
 
-p, ul{
-    font-size: 1.2vw;
+p, ul, footer{
+    font-size: 1.25vw;
     font-family: 'Barlow Condensed';
+    list-style: none;
+    font-weight: bold;
 }
 
 .cover {
@@ -236,6 +239,9 @@ p, ul{
     border-radius: 0 20px 20px 20px;
     width: 33%;
     padding: 2vw;
+    font-size: 2vw;
+    color: yellow;
+    text-shadow: 20px 10px 5px darkred;
     box-sizing: border-box;
 }
 
@@ -251,3 +257,9 @@ p, ul{
 
 .tablet_empty {display: none;}
 .phone_empty {display: none;}
+
+footer {
+    color: yellow;
+    font-size: 1.5vw;
+    padding-top: 5vw;
+}
