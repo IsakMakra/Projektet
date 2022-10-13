@@ -61,7 +61,7 @@ nav > .unmarked:hover {
 .best {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 18vw) 23vw;
+    grid-template-rows: repeat(3, 1fr) 1.5fr;
     background-color: rgba(255, 0, 0, 0.5);
     padding: 1vw;
     border: solid 3px black;    
