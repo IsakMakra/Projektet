@@ -83,10 +83,22 @@ nav > .unmarked:hover {
 .show_not_hover {
     width: 100%;
     object-fit: cover;
+    position: relative;
+    bottom: 28.5vw;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
 }
 
 .show_hover {
-    display: none;
+    width: 100%;
+    object-fit: cover;
+}
+
+.show_not_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
 }
 
 .song_list {
