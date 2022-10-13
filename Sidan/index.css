@@ -144,11 +144,11 @@ nav > .unmarked:hover {
     box-sizing: border-box;
 }
 
-#load .empty {
+#load .desktop_empty{
     width: 16.5%;
 }
 
-#load .two_wide {
+#load .bottom_left_90 {
     display: flex;
     align-items: center;
     background-color: black;
@@ -158,7 +158,7 @@ nav > .unmarked:hover {
     box-sizing: border-box;
 }
 
-#load .image {
+#load .top_left_90 {
     display: flex;
     align-items: flex-end;
     background-image: url(images/Desktop/metallica1.jpg);
