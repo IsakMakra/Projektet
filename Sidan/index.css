@@ -78,15 +78,16 @@ nav > .unmarked:hover {
 }
 
 .album_data h1 {
-    font-size: 2vw;
+    font-size: 4vw;
     font-family: 'Bungee Shade';
     line-height: 0.8;
     margin: 0;
 } 
 
-h2 {
+.album_data h2 {
     font-family: 'Barlow Semi Condensed';
-    font-size: 1.2vw;
+    font-size: 2vw;
+    color: yellow;
 }
 
 p, ul, footer{
@@ -132,6 +133,7 @@ p, ul, footer{
     display: flex;
     justify-content: space-around;
     gap: 1vw;
+    line-height: 1;
 }
 
 .song_list > div {
