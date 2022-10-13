@@ -9,7 +9,7 @@ body {
 .background {
     width: 85vw;
     margin: 20vh auto;
-    background-color: rgba(169, 0, 0, 0.5);
+    background-color: rgba(69, 0, 0, 0.5);
     padding: 1vw;
     border-radius: 30px;
     box-sizing: border-box;
@@ -19,8 +19,8 @@ header > h1{
     margin: 0;
     font-size: 10vw;
     line-height: 0.8;
-    text-shadow: 30px 0px 5px black;
-    color: orange;
+    text-shadow: 20px 10px 10px black;
+    color: yellow;
     font-family: 'Bungee Outline';
 }
 
@@ -28,13 +28,15 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 4vw 0;
+    font-family: 'Barlow Condensed';
+    text-shadow: 20px 10px 5px darkred;
 }
 
 nav > div {
     display: flex;
-    width: 20vw;
     justify-content: center;
-    background-color: rgba(255, 69, 0, 0.5);
+    width: 20vw;
+    background-color: rgba(255, 0, 0, 0.5);
     padding: 1vw 0;
     border: solid 3px black;
     border-radius: 10px;
@@ -44,16 +46,16 @@ nav > div {
 }
 
 nav > .unmarked:hover {
-    background-color: black;
-    color: rgba(255, 69, 0, 0.5);
-    border: solid 3px orange;
     cursor: pointer;
+    background-color: black;
+    color: red;
+    border: solid 3px orange;
     box-sizing: border-box;
 }
 
 .marked {
     background-color: black;
-    color: rgba(255, 69, 0, 0.5);
+    color: red;
     border: solid 3px orange;
 }
 
@@ -61,7 +63,7 @@ nav > .unmarked:hover {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 16vw) 20vw;
-    background-color: rgba(255, 69, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     padding: 1vw 1vw;
     border: solid 3px black;    
     border-radius: 30px;
@@ -72,6 +74,23 @@ nav > .unmarked:hover {
 .album_data {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
+    text-shadow: 10px 10px 15px black;
+}
+
+.album_data h1 {
+    font-size: 2vw;
+    font-family: 'Bungee Shade';
+    line-height: 0.8;
+    margin: 0;
+} 
+
+h2 {
+    font-family: 'Barlow Semi Condensed';
+}
+
+p, ul{
+    font-size: 1.2vw;
+    font-family: 'Barlow Condensed';
 }
 
 .cover {
@@ -115,7 +134,7 @@ nav > .unmarked:hover {
 .song_list > div {
     background-color: black;
     color: red;
-    text-shadow: 5px 5px 5px darkred;
+    text-shadow: 20px 10px 5px darkred;
     width: 100%;
     margin-top: 1vw;
 }
@@ -134,7 +153,7 @@ nav > .unmarked:hover {
     display: flex;
     list-style: none;
     color: red;
-    text-shadow: 3px 3px 3px darkred;
+    text-shadow: 20px 10px 5px darkred;
     margin-bottom: 0;
 }
 
@@ -156,8 +175,8 @@ nav > .unmarked:hover {
     display: flex;
     align-items: center;
     background-color: black;
-    padding: 1vw;
     border-radius: 20px 20px 20px 0;
+    padding: 1vw;
     width: 33%;
     box-sizing: border-box;
 }
@@ -167,11 +186,14 @@ nav > .unmarked:hover {
     align-items: flex-end;
     background-image: url(images/Desktop/metallica1.jpg);
     background-size: cover;
-    width: 16.5%;
+    background-position: center;
     border-radius: 0 20px 20px 20px;
+    width: 16.5%;
     font-size: 2vw;
     color: yellow;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 20px 10px 5px darkred;
+    font-style: italic;
+    font-weight: bold;
     padding-bottom: 2vw;
 }
 
@@ -179,10 +201,31 @@ nav > .unmarked:hover {
     display: flex;
     align-items: center;
     background-color: black;
+    border-radius: 20px 20px 0 20px;
     padding: 1vw;
     width: 16.5%;
-    border-radius: 20px 20px 0 20px;
     box-sizing: border-box;
+}
+
+#reload .bottom_left_90 {
+
+}
+
+#reload .top_left_90 {
+
+
+}
+
+#reload .top_left_90_2 {
+    background-image: url(images/Desktop/metallica2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+}
+
+#reload .bottom_right_90 {
+
+
 }
 
 .tablet_empty {display: none;}
