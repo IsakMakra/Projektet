@@ -134,7 +134,7 @@ nav > .unmarked:hover {
     display: flex;
     list-style: none;
     color: red;
-    text-shadow: 5px 5px 5px darkred;
+    text-shadow: 3px 3px 3px darkred;
     margin-bottom: 0;
 }
 
@@ -170,8 +170,8 @@ nav > .unmarked:hover {
     width: 16.5%;
     border-radius: 0 20px 20px 20px;
     font-size: 2vw;
-    color: orange;
-    text-shadow: 5px 5px 5px darkred;
+    color: yellow;
+    text-shadow: 3px 3px 3px black;
     padding-bottom: 2vw;
 }
 
