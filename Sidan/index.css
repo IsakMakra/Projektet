@@ -5,6 +5,8 @@ body {
     background-attachment: fixed;
 }
 
+/* Background 1st Layer*/
+
 .background {
     width: 85vw;
     margin: 20vh auto;
@@ -14,14 +16,17 @@ body {
     box-sizing: border-box;
 }
 
+/* METALLICA: */
+
 header > h1{
     margin: 0;
-    font-size: 78px;
     line-height: 0.8;
     text-shadow: 20px 10px 10px black;
     color: yellow;
     font-family: 'Bungee Outline';
 }
+
+/* Navigation: */
 
 nav {
     display: flex;
@@ -39,7 +44,6 @@ nav > div {
     padding: 1vw 0;
     border: solid 3px black;
     border-radius: 10px;
-    font-size: 17px;
     font-weight: bold;
     box-sizing: border-box;
 }
@@ -58,10 +62,11 @@ nav > .unmarked:hover {
     border: solid 3px orange;
 }
 
+/* Background 2nd Layers */
+
 .best {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr) 1.5fr;
     background-color: rgba(255, 0, 0, 0.5);
     padding: 1vw;
     border: solid 3px black;    
@@ -70,14 +75,16 @@ nav > .unmarked:hover {
     box-sizing: border-box;
 }
 
+/* Album Data: */
+
 .album_data {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
     text-shadow: 10px 10px 15px black;
+    padding-right: 1vw;
 }
 
 .album_data h1 {
-    font-size: 23px; 
     font-family: 'Bungee Shade';
     line-height: 0.8;
     margin: 0;
@@ -85,28 +92,28 @@ nav > .unmarked:hover {
 
 .album_data h2 {
     font-family: 'Barlow Semi Condensed';
-    font-size: 23px;
     color: yellow;
-    padding-bottom: 2vw;
+    padding: 2vw 0;
+    margin: 0;
 }
 
 p, h2, ul, footer{
-    font-size: 16.5px;
     font-family: 'Barlow Condensed';
     list-style: none;
     font-weight: bold;
 }
 
+/* Cover and Song Lists: */
+
 .cover {
     grid-column: 4 / span 2;
-    grid-row: 1 / span 2;
     position: relative;
+    box-sizing: border-box;
 }
 
 .show_not_hover {
     border-radius: 50px 50px 0 0;
     width: 100%;
-    height: 100%;
     opacity: 1;
     transition-property: opacity;
     transition-duration: 1s;
@@ -117,9 +124,6 @@ p, h2, ul, footer{
 .show_hover {
     border-radius: 50px 50px 0 0;
     width: 100%;
-    height: 100%;
-    grid-column: 4 / span 2;
-    grid-row: 1 / span 2;
 }
 
 .show_not_hover:hover {
@@ -130,14 +134,17 @@ p, h2, ul, footer{
 
 .song_list {
     grid-column: 4 / span 2;
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
-    justify-content: space-around;
     gap: 1vw;
     line-height: 1;
 }
 
 .song_list > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-color: black;
     color: red;
     text-shadow: 20px 10px 5px darkred;
@@ -155,13 +162,15 @@ p, h2, ul, footer{
     padding-left: 0;
     gap: 1%;
     grid-column: 1 / span 5;
-    grid-row: 4;
     display: flex;
     list-style: none;
     color: red;
     text-shadow: 20px 10px 5px darkred;
     margin-bottom: 0;
+    height: 20vw;
 }
+
+/* "Load" Anecdotes: */
 
 #load .top_right_90 {
     display: flex;
@@ -195,8 +204,8 @@ p, h2, ul, footer{
     background-position: center;
     border-radius: 0 20px 20px 20px;
     width: 16.5%;
-    color: yellow;
-    text-shadow: 20px 10px 5px darkred;
+    color: orange;
+    text-shadow: 5px 5px 2px darkred;
     font-style: italic;
     font-weight: bold;
     padding-bottom: 2vw;
@@ -211,6 +220,8 @@ p, h2, ul, footer{
     width: 16.5%;
     box-sizing: border-box;
 }
+
+/* "Reload" Anecdotes: */
 
 .bottom_left_90 {
     display: flex;
@@ -241,8 +252,8 @@ p, h2, ul, footer{
     border-radius: 0 20px 20px 20px;
     width: 33%;
     padding: 2vw;
-    color: yellow;
-    text-shadow: 20px 10px 5px darkred;
+    color: orange;
+    text-shadow: 5px 5px 2px darkred;
     box-sizing: border-box;
 }
 
@@ -261,15 +272,35 @@ p, h2, ul, footer{
 
 footer {
     color: yellow;
-    font-size: 1.5vw;
     padding-top: 5vw;
 }
 
-@media (max-width: 1111px) {
-    header > h1 {font-size: 7vw;}
-    nav > div {font-size: 1.5vw;}
-    .album_data h1,
-    .album_data h2 {font-size: 2vw;}
-    p, h2, ul, footer{font-size: 1.45vw;}
+/* Responsiveness Mode Desktop: */
 
+@media (min-width: 1111px) {
+    header > h1 {font-size: 88.8167px;}
+    nav > div {font-size: 22.2px;}
+    .album_data h1,
+    .album_data h2 {font-size: 33.3px;}
+    p, h2, ul, footer{font-size: 16.65px;}
+}
+@media (max-width: 1111px) and (min-width:900px) {
+    header > h1 {font-size: 8vw;}
+    nav > div {font-size: 2vw;}
+    .album_data h1,
+    .album_data h2 {font-size: 3vw;}
+    p, h2, ul, footer{font-size: 1.5vw;}
+}
+@media (max-width: 900px) {
+    header > h1 {font-size: 72.05px;}
+    nav > div {font-size: 18px;}
+    .album_data h1,
+    .album_data h2 {font-size: 27px;}
+    p, h2, ul, footer{font-size: 13.5px;}
+}
+
+/* Responsiveness Mode Tablet: */
+
+@media (max-width: 800px) {
+    
 }
