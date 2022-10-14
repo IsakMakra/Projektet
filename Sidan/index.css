@@ -320,7 +320,6 @@ footer {
 
     .album {
         grid-template-columns: repeat(8, 1fr);
-        grid-auto-rows: repeat(auto-fit, 1fr);
     }
 
     .cover {
