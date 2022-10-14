@@ -31,7 +31,7 @@ header > h1{
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 4vw 0;
+    margin: 5vw 0;
     font-family: 'Barlow Condensed';
     text-shadow: 20px 10px 5px darkred;
 }
@@ -112,7 +112,7 @@ p, h2, ul, footer{
 }
 
 .show_not_hover {
-    border-radius: 50px 50px 0 0;
+    border-radius: 20px 20px 0 0;
     width: 100%;
     opacity: 1;
     transition-property: opacity;
@@ -122,7 +122,7 @@ p, h2, ul, footer{
 }
 
 .show_hover {
-    border-radius: 50px 50px 0 0;
+    border-radius: 20px 20px 0 0;
     width: 100%;
 }
 
@@ -137,14 +137,13 @@ p, h2, ul, footer{
     grid-row: 2;
     display: flex;
     gap: 1vw;
-    line-height: 1;
+
 }
 
 .song_list > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     background-color: black;
     color: red;
     text-shadow: 20px 10px 5px darkred;
@@ -154,8 +153,8 @@ p, h2, ul, footer{
 
 .song_list > div > ul {list-style: decimal;}
 .song_list > div > h2 {margin-left: 1.5vw;}
-.song_list > div:nth-child(1) {border-radius: 0 0 0 50px;}
-.song_list > div:nth-child(2) {border-radius: 0 0 50px 0;}
+.song_list > div:nth-child(1) {border-radius: 0 0 0 20px;}
+.song_list > div:nth-child(2) {border-radius: 0 0 20px 0;}
 
 
 .anecdotes {
@@ -167,7 +166,7 @@ p, h2, ul, footer{
     color: red;
     text-shadow: 20px 10px 5px darkred;
     margin-bottom: 0;
-    height: 20vw;
+    height: 25vw;
 }
 
 /* "Load" Anecdotes: */
@@ -267,8 +266,8 @@ p, h2, ul, footer{
     box-sizing: border-box;
 }
 
-.tablet_empty {display: none;}
-.phone_empty {display: none;}
+.tablet_empty_1 {display: none;}
+.tablet_empty_2 {display: none;}
 
 footer {
     color: yellow;
@@ -276,6 +275,7 @@ footer {
 }
 
 /* Responsiveness Mode Desktop: */
+/* Font-Sizes for Desktop View: */
 
 @media (min-width: 1111px) {
     header > h1 {font-size: 88.8167px;}
@@ -291,7 +291,7 @@ footer {
     .album_data h2 {font-size: 3vw;}
     p, h2, ul, footer{font-size: 1.5vw;}
 }
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 800px){
     header > h1 {font-size: 72.05px;}
     nav > div {font-size: 18px;}
     .album_data h1,
@@ -302,5 +302,64 @@ footer {
 /* Responsiveness Mode Tablet: */
 
 @media (max-width: 800px) {
+    header > h1{
+        text-align: center;
+    }
+
+    .best {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cover {
+        grid-column: 1 / span 2;
+        background-color: black;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .show_hover {display: none;}
+    .show_not_hover:hover {opacity: 1;}
+
+    .show_not_hover{
+        border-radius: 20px 0 0 20px;
+    }
     
+    .song_list {
+        flex-direction: column; 
+        grid-column: 3;
+        grid-row: 1;
+        margin-left: 1vw;
+    }
+
+    .song_list > div:nth-child(1){
+        border-radius: 0 20px 0 0;
+        margin-top: 0;
+    }
+
+    .song_list > div:nth-child(2){
+        border-radius: 0 0 20px 0;
+    }
+
+    .album_data {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+        margin-top: 5vw;
+    }
+
+    #load .top_right_90 {
+        width: 25%;
+        grid-row: 3;
+    }
+    #load .desktop_empty {width: 25%;}
+    #load .bottom_left_90 {width: 50%;}
+    #load .tablet_empty_1 {
+        width: 25%;
+        grid-row: 4;
+    }
+    #load .top_left_90 {width: 25%;}
+    #load .bottom_right_90 {width: 25%;}
+    #load .tablet_empty_2 {width: 25%;}
+
+    .desktop_empty {width: 100%;}
+    .tablet_empty_1 {width: 100%;}
+    .tablet_empty_2 {width: 100%;}
 }
