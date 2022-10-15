@@ -184,7 +184,7 @@ nav > .unmarked:hover {
     box-sizing: border-box;
 }
 
-#load .desktop_empty {
+#load .empty {
     width: 17.5%;
 }
 
@@ -369,7 +369,7 @@ footer {
         width: 25%;
     }
     
-    #load .desktop_empty {
+    #load .empty {
         order: 2;
         width: 25%;
     }
@@ -437,6 +437,8 @@ footer {
     }
 }
 
+    /* Responsiveness Mode Phone: */
+
     @media (max-width: 500px) {
         .background {
             width: 100vw;
@@ -445,6 +447,7 @@ footer {
         
         header > h1 {
             font-size: 12vw;
+            text-align: center;
             margin-top: 5vw;
         }
 
@@ -497,7 +500,7 @@ footer {
             width: 65%;
         }
 
-        #load .desktop_empty {
+        #load .empty {
             order: 3;
             height: 50vw;
             width: 33%;
