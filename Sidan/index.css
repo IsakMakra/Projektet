@@ -282,8 +282,6 @@ footer {
     padding-top: 5vw;
 }
 
-/* Responsiveness Mode Desktop: */
-
 /* Font-Sizes for Desktop View: */
 
 @media (min-width: 1111px) {
@@ -310,7 +308,7 @@ footer {
 
 /* Responsiveness Mode Tablet: */
 
-@media (max-width: 800px) and (min-width: 500px){
+@media (max-width: 800px) and (min-width: 500px) {
     header > h1{
         text-align: center;
     }
