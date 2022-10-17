@@ -344,6 +344,7 @@ footer {
     .song_list > div:nth-child(1){
         border-radius: 0 20px 0 0;
         margin-top: 0;
+        padding-bottom: 3vw;
     }
 
     .song_list > div:nth-child(2) {
