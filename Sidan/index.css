@@ -178,7 +178,7 @@ nav > .unmarked:hover {
     align-items: center;
     height: 25vw;
     width: 17.5%;
-    background-color: #e18864;
+    background-color: #d8322f;
     border-radius: 20px 0 20px 20px;
     padding: 1vw;
     box-sizing: border-box;
@@ -193,7 +193,7 @@ nav > .unmarked:hover {
     align-items: center;
     height: 25vw;
     width: 33%;
-    background-color: #e18864;
+    background-color: #d8322f;
     border-radius: 20px 20px 20px 0;
     padding: 1vw;
     box-sizing: border-box;
@@ -219,7 +219,7 @@ nav > .unmarked:hover {
     align-items: center;
     height: 25vw;
     width: 17.5%;
-    background-color: #e18864;
+    background-color: #d8322f;
     border-radius: 20px 20px 0 20px;
     box-sizing: border-box;
 }
