@@ -178,30 +178,16 @@ nav > .unmarked:hover {
 
 #load .box {
     display: flex;
+    align-items: center;
     height: 25vw;
     background-color: #d8322f;
     padding: 1vw;
     box-sizing: border-box;
 }
 
-#load .top_right_90 {
-    border-radius: 20px 0 20px 20px;
-    width: 17.5%;
-    align-items: center;
-}
-
-#load .empty {width: 17.5%;}
-
-#load .bottom_left_90 {
-    width: 33%;
-    border-radius: 20px 20px 20px 0;
-    align-items: center;
-}
-
-#load .image {
+#load .image_box {
     display: flex;
     align-items: flex-end;
-    width: 17.5%;
     background-image: url(images/Desktop/metallica1.jpg);
     background-size: cover;
     background-position: center;
@@ -213,10 +199,23 @@ nav > .unmarked:hover {
     padding-bottom: 3vw;
 }
 
+#load .top_right_90 {
+    width: 17.5%;
+    border-radius: 20px 0 20px 20px;
+}
+
+#load .empty {width: 17.5%;}
+
+#load .bottom_left_90 {
+    width: 33%;
+    border-radius: 20px 20px 20px 0;
+}
+
+#load .image {width: 17.5%;}
+
 #load .bottom_right_90 {
     width: 17.5%;
     border-radius: 20px 20px 0 20px;
-    align-items: center;
 }
 
 /* "Reload" Anecdotes: */
@@ -230,20 +229,9 @@ nav > .unmarked:hover {
     box-sizing: border-box;
 }
 
-#reload .bottom_left_90 {
-    width: 33%;
-    border-radius: 20px 20px 20px 0px;
-}
-
-#reload .top_left_90 {
-    width: 17.5%;
-    border-radius: 20px 0 20px 20px;
-}
-
-#reload .image {
+#reload .image_box {
     display: flex;
     align-items: flex-end;
-    width: 33%;
     background-image: url(images/Desktop/metallica2.jpg);
     background-size: cover;
     background-position: center;
@@ -254,6 +242,18 @@ nav > .unmarked:hover {
     padding-left: 1vw;
     box-sizing: border-box;
 }
+
+#reload .bottom_left_90 {
+    width: 33%;
+    border-radius: 20px 20px 20px 0px;
+}
+
+#reload .top_left_90 {
+    width: 17.5%;
+    border-radius: 20px 0 20px 20px;
+}
+
+#reload .image {width: 33%;}
 
 #reload .bottom_right_90 {
     width: 17.5%;
@@ -267,7 +267,7 @@ nav > .unmarked:hover {
 
 footer {
     color: yellow;
-    padding-top: 8vw;
+    padding-top: 100px;
 }
 
 /* Font-Sizes for Desktop View: */
@@ -297,9 +297,7 @@ footer {
 /* Responsiveness Mode Tablet: */
 
 @media (max-width: 800px) and (min-width: 500px) {
-    header > h1{
-        text-align: center;
-    }
+    header > h1{text-align: center;}
 
     header > h1 {font-size: 10vw;}
     nav > div {font-size: 3vw;}
@@ -307,9 +305,7 @@ footer {
     .album_data h2 {font-size: 4vw;}
     p, h2, ul, footer{font-size: 2vw;}
 
-    .album {
-        grid-template-columns: repeat(10, 1fr);
-    }
+    .album {grid-template-columns: repeat(10, 1fr);}
 
     .cover {
         grid-column: 1 / span 6;
@@ -385,7 +381,6 @@ footer {
     #load .tablet_empty_2 {
         order: 7;
         display: inline;
-        order: 7;
         width: 23%;
     }
 
@@ -474,22 +469,23 @@ footer {
 
         /* Anecdotes "Load": */
 
+        #load .box {
+            height: 50vw;
+        }
+
         #load .top_right_90 {
             order: 1;
-            height: 50vw;
             width: 33%;
         }
 
         
         #load .bottom_left_90 {
             order: 2;
-            height: 50vw;
             width: 65%;
         }
 
         #load .empty {
             order: 3;
-            height: 50vw;
             width: 33%;
         }
 
@@ -500,7 +496,6 @@ footer {
         
         #load .bottom_right_90 {
             order: 6;
-            height: 50vw;
             width: 32.5%;
         }
 
@@ -509,15 +504,17 @@ footer {
 
         /* Anecdotes "Reload: */
 
+        #reload .box {
+            height: 50vw;
+        }
+
         #reload .bottom_left_90 {
             order: 1;
-            height: 50vw;
             width: 65%;
         }
         
         #reload .top_left_90 {   
             order: 2;
-            height: 50vw;
             width: 33%;
         }
 
@@ -528,7 +525,6 @@ footer {
         
         #reload .bottom_right_90 {
             order: 6;
-            height: 50vw;
             width: 33%;
         }
 
